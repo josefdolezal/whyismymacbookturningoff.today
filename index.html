@@ -51,37 +51,41 @@
                 </p>
 
                 <h3>Detailed problem description</h3>
+                
+                <a href="#" id="detailed-problem-expander" onclick="expandDescription(); return false;">(expand section)</a>
 
-                <p>
-                    Our MacBooks are randomly turning off during day.
-                    It's hard to reproduce the problem for a first time, but when it happens the first, it's happening every 5 - 10 minutes.
-                    When it happens, the laptop is turned off immediately, it just crash.
-                    There is no pattern when it occures, it does not matter if it's heavily used or not (neither matter the temperature).
-                </p>
-
-                <p>
-                    Sometimes, instead of immediate crash the screen and keyboard goes black, but the Apple logo is still on and the fans goes to a very high speed.
-                    When this happens, the laptop does not turn off but is unusable and must be turned off manually.
-                </p>
-
-                <p>
-                    In both cases we have tu wait ~5 minutes until it can be turned on again.
-                    Once we turn it on, it usually crashes in few minutes again.
-                </p>
-
-                <p>
-                    It takes a while (up to 8 hours) to make occure for a first time, but when it happens it's repeating immeadiately.
-                </p>
-
-                <p>
-                    The problem occures mostly on MacBook Pro series manufactured in years 2013, 2014 and 2015.
-                    There are many affected regions, posts about this problem comes from USA and several countries in EU.
-                </p>
-
-                <p>
-                    We tried our best finding proper solution but we never found it.
-                    We are convinced that it always was caused by insufficient diagnosis process. 
-                </p>
+                <div id="detailed-problem-description" style="display: none;">
+                    <p>
+                        Our MacBooks are randomly turning off during day.
+                        It's hard to reproduce the problem for a first time, but when it happens the first, it's happening every 5 - 10 minutes.
+                        When it happens, the laptop is turned off immediately, it just crash.
+                        There is no pattern when it occures, it does not matter if it's heavily used or not (neither matter the temperature).
+                    </p>
+    
+                    <p>
+                        Sometimes, instead of immediate crash the screen and keyboard goes black, but the Apple logo is still on and the fans goes to a very high speed.
+                        When this happens, the laptop does not turn off but is unusable and must be turned off manually.
+                    </p>
+    
+                    <p>
+                        In both cases we have tu wait ~5 minutes until it can be turned on again.
+                        Once we turn it on, it usually crashes in few minutes again.
+                    </p>
+    
+                    <p>
+                        It takes a while (up to 8 hours) to make occure for a first time, but when it happens it's repeating immeadiately.
+                    </p>
+    
+                    <p>
+                        The problem occures mostly on MacBook Pro series manufactured in years 2013, 2014 and 2015.
+                        There are many affected regions, posts about this problem comes from USA and several countries in EU.
+                    </p>
+    
+                    <p>
+                        We tried our best finding proper solution but we never found it.
+                        We are convinced that it always was caused by insufficient diagnosis process. 
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -191,5 +195,15 @@
             <li class="nav-item">Author: Josef Dolezal, <a href="https://twitter.com/@josefdolezal">@josefdolezal</a></li>
         </ul>
     </footer>
+
+    <script>
+        function expandDescription() {
+            var expander = document.getElementById("detailed-problem-expander");
+            var expandedDescription = document.getElementById("detailed-problem-description");
+
+            expander.style.display = "none";
+            expandedDescription.style.display = "block";
+        }
+    </script>
 </body>
 </html>
